@@ -16,7 +16,7 @@ public class Main {
 		new Schrottmovement();
 		new Gegnerkollision();
 		new Schrottkollision();
-		
+		new Explosion();
 	}
 
 }

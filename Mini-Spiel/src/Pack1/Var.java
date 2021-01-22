@@ -14,14 +14,16 @@ public class Var {
 	static int backgroundY1 = 0;
 	static int backgroundY2 = -600, backgroundspeed = 9;
 	static int x = 400, y = 400;
-	static int speedup = 3, speeddown = 2, speedleft = 2, speedright = 2;
+	static int speedup = 2, speeddown = 2, speedleft = 2, speedright = 2;
 	static int flammenanimation;
 	static Random r = new Random();
 	static int schrottx1[]= new int [5], schrotty1[]= new int [5];
 	static int schrottx2[]= new int [5], schrotty2[]= new int [5];
 	static int schrottx3;
 	static int schrotty3;
-	static int schrott = 0, leben = 2;
+	static int schrott = 0, leben = 2, maxleben =2;
+	static int expanimation;
+
 	
 	static JButton btnresume, btnshop, btnoptionen, btnexit;
 	static JButton btnmute;
@@ -38,6 +40,7 @@ public class Var {
 	static BufferedImage irakete, iflamme1, iflamme2;
 	static BufferedImage igegner1;
 	static BufferedImage ischrott1, ischrott2, ischrott3;
+	static BufferedImage iexplosion[]= new BufferedImage[10];
 
 	public Var() {
 
@@ -56,7 +59,10 @@ public class Var {
 			ischrott1 = ImageIO.read(new File("rsc/schrott1.png"));
 			ischrott2 = ImageIO.read(new File("rsc/schrott2.png"));
 			ischrott3 = ImageIO.read(new File("rsc/schrott3.png"));
-
+			// Explosion
+			for(int i = 0 ; i<10 ; i++) {
+			iexplosion[i]= ImageIO.read(new File("rsc/exp"+(i+1)+".gif"));
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("Bilder konntne nicht geladen werden");
