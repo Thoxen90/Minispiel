@@ -12,7 +12,10 @@ public class Main {
 		new Background();
 		new PlayerMovement();
 		new Flammenanimationen();
-		
+		new Gegnermovement();
+		new Schrottmovement();
+		new Gegnerkollision();
+		new Schrottkollision();
 		
 	}
 

@@ -18,9 +18,11 @@ public class Flammenanimationen {
 				if (temp == 0) {
 					Var.flammenanimation = 0;
 					temp++;
-				} else if (temp == 1)
+				} else if (temp == 1) {
+					Var.flammenanimation =1;
 					temp--;
-			}
+				}
+				}
 
 		}, 0, 100);
 

@@ -36,7 +36,7 @@ public class PlayerMovement {
 				
 			}
 		
-		},0 , 10);
+		},0 , 9);
 	}
 
 }
